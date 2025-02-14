@@ -21,7 +21,7 @@ function Skills() {
           experience,
         })
         .then((res) => {
-          if (res.data.message === "Data saved successfully") e.target.reset();
+          if (res.data.message === "Data saved successfully");
           location.reload();
         });
     } catch (error) {
