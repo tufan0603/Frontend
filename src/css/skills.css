@@ -1,0 +1,121 @@
+.skill-con-fluid
+{
+    background-color: #311E25;
+    color: #fff;
+}
+
+.skills-input
+{
+    width: 100% ;
+    margin: 10px 0px ;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #d2d2d2;
+    color: #fff;
+    background-color: transparent;
+    background: transparent;
+    
+    
+}
+.skill-header
+{
+    text-align: center;
+    font-size: 3rem;
+    margin: 50px;
+    padding-top: 100px;
+}
+.addSkillBtn
+{
+    width: 100% ;
+    margin-top: 47px ;
+    /* width: 250px; */
+    color: #DB9A64 ;
+    background-color: transparent;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #DB9A64;
+    text-align: center;
+    cursor: pointer;
+}
+.addSkillBtn:hover{
+    color: #fff;
+    background-color: #DB9A64;
+}
+
+.progress-bar-container {
+    width: 80%;
+    margin-left: 10% ;
+    padding-top:30px;
+  }
+  
+  .progress-bar-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    
+  }
+  
+  .progress-bar-fill {
+    height: 6px;
+    background-color: #DB9A64;
+    border-radius: 5px;
+    color: #fff;
+    
+  }
+
+
+ .allSkill
+ {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+
+ }
+
+ .all-skill-con
+ {
+    padding-bottom: 100px;
+    
+ }
+ .delete-icon {
+    margin-left: 10px;
+ }
+ 
+
+
+@media only screen and (min-width:200px ) and (max-width:990px) {
+    .skill-header
+    {
+        font-size: 2rem;
+    }
+    .progress-bar-container {
+        width: 100%;
+        margin-left: 0% ;
+        padding-top:30px;
+      }
+    .progress-bar-label {
+    font-size: 12px;
+    font-weight: 500;
+    }
+    .allSkill
+    {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,39 @@
+.msg-container-fluid{
+    padding-top: 100px;
+    background-color: #311E25;
+    color: #fff;
+}
+.msg-row{
+ 
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.message-col
+{
+    margin: 10px;
+    width: 300px;
+    min-height: 150px;
+    padding: 15px;
+    padding-top: 5px;
+    border: 1px solid #DB9A64;
+    border-radius: 10px;
+    background-color: #422931;
+}
+.all-msg{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.name
+{
+    font-size: 18px;
+
+}
+.cross-icon{
+    text-align: right;
+    font-size: 20px;
+    color: #DB9A64;
+    margin: 0;
+}
