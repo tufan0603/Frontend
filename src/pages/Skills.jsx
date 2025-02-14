@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useNavigate } from "react";
 import "../css/skills.css";
 import axios from "axios";
 import BACKEND from "../../constrance";
@@ -7,6 +7,7 @@ import BACKEND from "../../constrance";
 import ProgressBar from "./ProgressBar";
 
 function Skills() {
+  const navigate = useNavigate();
   const submitHandeler = async (e) => {
     e.preventDefault();
     const skillName = e.target.skillName.value;
@@ -22,7 +23,7 @@ function Skills() {
         })
         .then((res) => {
           if (res.data.message === "Data saved successfully");
-          location.reload();
+          navigate("/");
         });
     } catch (error) {
       console.error("Error posting data:", error);
