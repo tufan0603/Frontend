@@ -1,5 +1,6 @@
 import React from "react";
-import { useState, useEffect, useNavigate } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/skills.css";
 import axios from "axios";
 import BACKEND from "../../constrance";
@@ -22,8 +23,7 @@ function Skills() {
           experience,
         })
         .then((res) => {
-          if (res.data.message === "Data saved successfully");
-          navigate("/");
+          if (res.data.message === "Data saved successfully") navigate("/");
         });
     } catch (error) {
       console.error("Error posting data:", error);
