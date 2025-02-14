@@ -1,3 +1,3 @@
-const BACKEND = "http://localhost:4000"
+const BACKEND = "https://backend-ndb7.onrender.com"
 
 export default BACKEND;
