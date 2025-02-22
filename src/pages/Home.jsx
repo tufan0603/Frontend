@@ -13,7 +13,7 @@ function Home() {
             </Link>
           </div>
           <div className="col-md-6">
-            <Link to={"/projects"}>
+            <Link to={"/project"}>
               <button className="elements-link">Projects</button>
             </Link>
           </div>
