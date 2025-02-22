@@ -40,7 +40,7 @@ function Projects() {
   return (
     <div className="container-fluid projects-container-f ">
       <div className="container">
-        <form className="row" onSubmit={submitHandeler}>
+        <form className="row" onSubmit={submitHandeler} method="post">
           <div className="col-12">
             <h1 className="add-projects">Add Projects</h1>
           </div>
