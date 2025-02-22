@@ -1,13 +1,13 @@
 import "../css/project.css";
 import BACKEND from "../../../frontend2/constrants";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { UploadCloud } from "lucide-react";
 
 function Projects() {
   const [fileName, setFileName] = useState("");
-
+  const navigate = useNavigate();
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
