@@ -1,5 +1,5 @@
 import "../css/project.css";
-import BACKEND from "../../../frontend2/constrants";
+import BACKEND from "../../constrance.js";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
