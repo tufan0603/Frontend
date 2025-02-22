@@ -1,4 +1,6 @@
 import "../css/project.css";
+import BACKEND from "../../../frontend2/constrants";
+import axios from "axios";
 
 import React, { useState } from "react";
 import { UploadCloud } from "lucide-react";
@@ -13,10 +15,32 @@ function Projects() {
     }
   };
 
+  const submitHandeler = async (e) => {
+    e.preventDefault();
+    const title = e.target.title.value;
+    const github = e.target.github.value;
+    const smallDescription = e.target.smallDescription.value;
+    const bigDescription = e.target.bigDescription.value;
+    try {
+      const response = await axios
+        .post(`${BACKEND}/project`, {
+          title,
+          github,
+          smallDescription,
+          bigDescription,
+        })
+        .then((res) => {
+          if (res.data.message === "Data saved successfully") navigate("/");
+        });
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
+  };
+
   return (
     <div className="container-fluid projects-container-f ">
       <div className="container">
-        <form className="row">
+        <form className="row" onSubmit={submitHandeler}>
           <div className="col-12">
             <h1 className="add-projects">Add Projects</h1>
           </div>
